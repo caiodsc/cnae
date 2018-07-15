@@ -14,6 +14,8 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.7'
 # Integration of RubyMoney - Money with Rails
 gem 'money-rails', '~>1'
+# Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff
+gem 'rails-i18n'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
