@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180714204847) do
+ActiveRecord::Schema.define(version: 20180714235340) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,4 +21,17 @@ ActiveRecord::Schema.define(version: 20180714204847) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "records", force: :cascade do |t|
+    t.date "event_date"
+    t.string "cpf"
+    t.string "card"
+    t.time "event_time"
+    t.bigint "kind_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "amount_cents"
+    t.index ["kind_id"], name: "index_records_on_kind_id"
+  end
+
+  add_foreign_key "records", "kinds"
 end
