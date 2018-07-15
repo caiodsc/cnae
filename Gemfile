@@ -16,6 +16,8 @@ gem 'puma', '~> 3.7'
 gem 'money-rails', '~>1'
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff
 gem 'rails-i18n'
+# Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions.
+gem 'rest-client'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
